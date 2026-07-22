@@ -81,17 +81,28 @@ Keep the same file names and everything just works.
 
 ---
 
-## 4. Deploying updates
+## 4. Publish the site (one-time, ~3 minutes)
 
-The site is hosted on **Vercel** (free tier). After any edit:
+The complete site is on GitHub:
+**https://github.com/ishmaelsassistant-max/bybobbie**
 
-```bash
-npm run build   # optional local check
-```
+To put it live on Vercel (free):
 
-Then push/redeploy through Vercel. If your developer connected the project to
-GitHub, simply committing to the main branch auto-deploys. Otherwise ask them to
-run the deploy, or use the Vercel dashboard's "Redeploy" button.
+1. Go to **https://vercel.com** and sign in (you can sign in with GitHub).
+2. Click **Add New… → Project**.
+3. Under **Import Git Repository**, pick **`bybobbie`**. (If it's not listed,
+   click *Adjust GitHub App Permissions* and grant Vercel access to the repo.)
+4. Leave every setting at its default — Vercel auto-detects Next.js — and click
+   **Deploy**.
+5. After ~1 minute you'll get a live `…vercel.app` URL. That's your site.
+
+The videos and photos are included in the repo, so they appear automatically —
+nothing else to upload.
+
+> Note: publishing had to stop here because the automated deploy didn't have
+> permission to create a Vercel project on your account — importing it yourself
+> once (above) is the fix, and it also gives you **auto-deploy**: any future edit
+> pushed to GitHub redeploys the site on its own.
 
 ---
 
