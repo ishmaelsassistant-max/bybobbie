@@ -81,34 +81,26 @@ Keep the same file names and everything just works.
 
 ---
 
-## 4. Publish the site (one-time, ~3 minutes)
+## 4. The site is LIVE ✅
 
-The complete site is on GitHub:
-**https://github.com/ishmaelsassistant-max/bybobbie**
+It's already deployed and public:
 
-To put it live on Vercel (free):
+- **Live now:** https://bybobbie-company-scope.vercel.app
+- **Vercel project:** `company-scope / bybobbie`
+- **GitHub repo:** https://github.com/ishmaelsassistant-max/bybobbie
 
-1. Go to **https://vercel.com** and sign in (you can sign in with GitHub).
-2. Click **Add New… → Project**.
-3. Under **Import Git Repository**, pick **`bybobbie`**. (If it's not listed,
-   click *Adjust GitHub App Permissions* and grant Vercel access to the repo.)
-4. Leave every setting at its default — Vercel auto-detects Next.js — and click
-   **Deploy**.
-5. After ~1 minute you'll get a live `…vercel.app` URL. That's your site.
+The GitHub repo is connected to Vercel, so **every change you push to the `main`
+branch redeploys the site automatically** — no manual step. (Deployment
+Protection was turned off for this project so the public can view it.)
 
-The videos and photos are included in the repo, so they appear automatically —
-nothing else to upload.
-
-> Note: publishing had to stop here because the automated deploy didn't have
-> permission to create a Vercel project on your account — importing it yourself
-> once (above) is the fix, and it also gives you **auto-deploy**: any future edit
-> pushed to GitHub redeploys the site on its own.
+To make a change: edit the files, then commit and push to `main`. Vercel
+rebuilds within ~1 minute. `npm run build` locally is an optional pre-check.
 
 ---
 
 ## 5. Connecting your domain (bybobbie.co.uk)
 
-In the **Vercel dashboard → your project → Settings → Domains**, add both
+In **Vercel → the `bybobbie` project → Settings → Domains**, add both
 `bybobbie.co.uk` and `www.bybobbie.co.uk`. Vercel will show you the exact records
 to add — they'll be one of these at your domain registrar (where you bought
 bybobbie.co.uk):
